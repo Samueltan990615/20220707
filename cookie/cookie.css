@@ -336,11 +336,13 @@ footer li{
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
     .carousel-caption h5 {
         font-size: 50px;
     }
-
+    .carousel-caption p {
+        font-size: 15px;
+    }
     .carousel-caption {
         bottom: 300px;
     }
@@ -357,26 +359,6 @@ footer li{
 @media (max-width: 1000px) {
     .contact .column{
         width: 100%;
-    }
-}
-
-@media (max-width: 720px) {
-    .carousel-caption h5 {
-        font-size: 40px;
-    }
-    .carousel-caption p {
-        font-size: 15px;
-    }
-    .carousel-caption {
-        bottom: 300px;
-    }
-
-    .about .column {
-        width: 100%;
-    }
-
-    .about .right img {
-        margin-top: 20px;
     }
 }
 @media (max-width: 680px) {
