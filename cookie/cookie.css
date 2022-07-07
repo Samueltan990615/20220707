@@ -356,9 +356,18 @@ footer li{
     }
 
 }
-@media (max-width: 1000px) {
+@media (max-width: 993px) {
     .contact .column{
         width: 100%;
+    }
+    .navbar{
+        background-color: whitesmoke;
+    }
+    .navbar .navbar-brand{
+        color: yellowgreen;
+    }
+    .navbar .navbar-brand:hover{
+        color: black;
     }
 }
 @media (max-width: 680px) {
@@ -409,6 +418,29 @@ footer li{
     }
     .carousel-caption a {
         font-size: 13px;
+    }
+    .carousel-caption {
+        bottom: 300px;
+    }
+
+    .about .column {
+        width: 100%;
+    }
+
+    .about .right img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 280px) {
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 9px;
+    }
+    .carousel-caption a {
+        font-size: 12px;
     }
     .carousel-caption {
         bottom: 300px;
