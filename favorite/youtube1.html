@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="vue.js"></script>
+    <title>Favorite</title>
+    <link rel="stylesheet" href="youtube1.css">
+    <link rel="shortcut icon" href="youtube.ico">
+</head>
+
+<body>
+    <div id="box">
+        <div class="container">
+            <header>
+                <button class="btn menu-btn">
+                  <img src="images/menu.svg" alt="menu" />
+                </button>
+                <button class="btn home-btn">
+                  <img src="images/youtube.svg" alt="youtube logo" />
+                  <h1>YouTube</h1>
+                </button>
+                <div class="search-bar">
+                  <input class="search-input" type="text" placeholder="Search" />
+                  <button class="btn search-btn">
+                    <img src="images/magnify.svg" alt="magnify" />
+                  </button>
+                </div>
+                <div class="user-options">
+                  <button class="btn add-video-btn">
+                    <img src="images/video-plus.svg" alt="add video" />
+                  </button>
+                  <button class="btn apps-btn">
+                    <img src="images/apps.svg" alt="apps" />
+                  </button>
+                  <button class="btn options-btn">
+                    <img src="images/dots-vertical.svg" alt="options" />
+                  </button>
+                  <button class="btn sign-btn">
+                    <img src="images/account-circle.svg" alt="no user avatar" />
+                    <span>SIGN IN</span>
+                  </button>
+                </div>
+              </header>
+
+                <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
+                  <div class="item_header item_body">
+                    <div class="item_detail">
+                      <a :href="item.itemLink">
+                        <img v-bind:src="item.imgUrl" alt="" ></a>
+                        <div class="name">{{item.itemName}}</div>
+                        <div class="channel_name">{{item.itemCName}}</div>
+                    </div>
+                    <div class="remove">
+                        <button @click="handledelete(index)">Remove</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="youtube1.js"></script>
+</body>
+
+</html>
